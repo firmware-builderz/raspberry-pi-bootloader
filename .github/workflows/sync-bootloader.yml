@@ -1,0 +1,41 @@
+name: Sync Raspberry Pi Bootloader
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Läuft jede Stunde
+  workflow_dispatch: # Manuelles Starten möglich
+
+jobs:
+  sync-bootloader:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v4
+
+      - name: Clone source Raspberry Pi firmware repository
+        run: |
+          git clone --depth=1 https://github.com/raspberrypi/firmware.git firmware_source
+
+      - name: Update Bootloader files (Only existing files)
+        run: |
+          for i in 1 2 3 4 5; do
+            target_dir="Raspberry Pi $i"
+            if [ -d "$target_dir" ]; then
+              rsync -av --existing firmware_source/boot/ "$target_dir/"
+            fi
+          done
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Commit and Push changes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git add .
+          git commit -m "Automated Bootloader Sync (only updated existing files)" || echo "No changes to commit"
+          git remote set-url origin https://$GH_TOKEN@github.com/firmware-builderz/raspberry-pi-bootloader.git
+          git push origin HEAD:master
