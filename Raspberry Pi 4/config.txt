@@ -1,0 +1,7 @@
+# config.txt für Raspberry Pi 4
+arm_freq=1500
+gpu_mem=128
+dtoverlay=vc4-fkms-v3d
+max_framebuffers=2
+enable_uart=1
+arm_64bit=1

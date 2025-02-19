@@ -1,0 +1,5 @@
+# config.txt für Raspberry Pi 1
+arm_freq=700
+gpu_mem=16
+dtoverlay=disable-bt
+dtoverlay=disable-wifi

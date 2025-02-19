@@ -1,0 +1,6 @@
+# config.txt für Raspberry Pi 3
+arm_freq=1200
+gpu_mem=64
+dtoverlay=disable-bt
+dtoverlay=disable-wifi
+enable_uart=1
