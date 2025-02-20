@@ -38,4 +38,4 @@ jobs:
           git add .
           git commit -m "Automated Bootloader Sync (only updated existing files)" || echo "No changes to commit"
           git remote set-url origin https://$GH_TOKEN@github.com/firmware-builderz/raspberry-pi-bootloader.git
-          git push origin HEAD:master
+          git push origin HEAD:main
