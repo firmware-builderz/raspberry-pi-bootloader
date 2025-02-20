@@ -1,0 +1,9 @@
+MIT License
+
+Copyright (c) [2025] [Calvin Ronksley]
+
+Hiermit wird ausdrücklich erlaubt, kostenlos, uneingeschränkt, dauerhaft und weltweit, mit oder ohne Änderung, das Softwareprodukt und die damit gelieferten Dokumentationen (die "Software") zu nutzen, zu kopieren, zu ändern, zu mergen, zu veröffentlichen, zu vertreiben, zu unterlizenzieren und/oder zu verkaufen, und es dürfen auch die Personen, denen die Software zur Verfügung gestellt wird, dies tun, unter den folgenden Bedingungen:
+
+Der oben stehende Copyright-Hinweis und dieser Haftungsausschluss müssen in allen Kopien oder wesentlichen Teilen der Software enthalten sein.
+
+DIE SOFTWARE WIRD "WIE SIE IST" BEREITGESTELLT, OHNE JEDE GEWÄHRLEISTUNG, AUSDRÜCKLICH ODER IMPLIZIT, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF, DIE IMPLIZITEN GEWÄHRLEISTUNGEN DER MARKTFÄHIGKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND DER NICHTVERLETZUNG. IN KEINEM FALL HAFTET DER AUTOR ODER DIE COPYRIGHT-INHABER FÜR ANSPRÜCHE, SCHÄDEN ODER ANDERE HAFTUNGEN, OB IN EINER KLAGE ODER AUF ANDERE WEISE, AUS DER NUTZUNG DER SOFTWARE ODER ANDERWEITIGEN HANDLUNGEN IM ZUSAMMENHANG MIT DER SOFTWARE.
